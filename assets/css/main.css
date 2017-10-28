@@ -18,7 +18,7 @@ body,
 
 nav {
     position: fixed;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+    border-bottom: 1px solid rgba(199, 199, 199, 0.8);
     background-color: white;
     top: 0;
     left: 0;
@@ -35,6 +35,17 @@ nav ul li {
 
 nav ul li a {
     color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 .landing-screen {
@@ -56,8 +67,27 @@ nav ul li a {
     margin: 2em;
 }
 
-.shows,
-.about,
-.contact {
+#shows,
+#about,
+#contact {
     padding: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .hamburger {
+        display: inline;
+        margin: 1.2rem;
+    }
+
+    .landing-screen {
+        font-size: 1.2em;
+    }
+
+    .intro {
+        margin: auto;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
