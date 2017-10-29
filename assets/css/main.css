@@ -16,6 +16,10 @@ body,
     text-align: center;
 }
 
+h1 {
+    font-weight: 800;
+}
+
 nav {
     position: fixed;
     border-bottom: 1px solid rgba(199, 199, 199, 0.5);
@@ -73,8 +77,8 @@ nav ul li a {
     padding: 30px;
 }
 
-.shows-deck {
-    border: 1px solid black;
+#shows {
+    background-color: rgba(42, 133, 87, 0.5);
 }
 
 .show {
@@ -126,5 +130,11 @@ nav ul li a {
 
     nav ul {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .show-1 {
+        width: 95%;
     }
 }
