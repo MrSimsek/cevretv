@@ -73,6 +73,21 @@ nav ul li a {
     padding: 30px;
 }
 
+.shows-deck {
+    border: 1px solid black;
+}
+
+.show {
+    margin: 10px;
+    display: inline-block;
+}
+
+.show-1 {
+    background: #ffffff url("/assets/images/ec.jpg") no-repeat center; 
+    width: 450px;
+    height: 350px;
+}
+
 @media only screen and (max-width: 800px) {
     .dropdown {
         display: inline-block;
