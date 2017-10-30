@@ -105,8 +105,8 @@ footer {
         font-size: 1.2em;
     }
 
-    .intro {
-        margin: 10px;
+    .landing-screen .intro {
+        margin: 5%;
     }
 
     nav ul {
