@@ -55,7 +55,6 @@ nav ul li a {
 }
 
 .landing-screen {
-    background: url("/assets/images/windmill.jpg") fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
