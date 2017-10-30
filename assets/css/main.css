@@ -125,6 +125,11 @@ nav ul li a {
     background-color: rgba(9, 65, 31, 0.8);
 }
 
+#contact h3 {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 #about,
 #contact {
     padding: 110px 0;
