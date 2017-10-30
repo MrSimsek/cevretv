@@ -62,9 +62,11 @@ nav ul li a {
 #shows {
     background-color: rgba(61, 179, 118, 0.5);
 }
+
 #shows h1 {
     padding-top: 30px;
 }
+
 .show {
     display: inline-block;
     height: 356px;
@@ -74,8 +76,48 @@ nav ul li a {
     opacity: 0.7;
     transition: all 0.4s ease-in-out;
 }
+
 .show:hover {
     opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #contact {
@@ -128,5 +170,9 @@ footer {
     
     #about p {
         width: 70%;
+    }
+
+    iframe {
+        height: 300px;
     }
 }
