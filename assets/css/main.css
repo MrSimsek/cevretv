@@ -160,6 +160,19 @@ footer {
     nav ul {
         display: none;
     }
+
+    .show {
+        width: 100%;
+        
+    }
+
+    #shows {
+        padding: 0;
+    }
+
+    #shows h1 {
+        padding-top: 30px;
+    }
     
     #about,
     #contact p {
