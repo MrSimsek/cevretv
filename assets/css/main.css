@@ -130,6 +130,18 @@ nav ul li a {
     padding-left: 5%;
 }
 
+.accounts a {
+    display: inline-block;
+    color: white;
+    margin: 2%;
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+
+.accounts a:hover {
+    opacity: 1;
+}
+
 #about,
 #contact {
     padding: 110px 0;
