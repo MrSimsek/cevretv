@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
 * {
     margin: auto;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -16,6 +16,12 @@ body,
     text-align: center;
 }
 
+.info {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
 nav {
     position: fixed;
     border-bottom: 1px solid rgba(199, 199, 199, 0.5);
@@ -25,7 +31,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    font-weight: 600;
+    z-index: 2000;
 }
 
 nav ul li {
@@ -49,7 +55,7 @@ nav ul li a {
 }
 
 .landing-screen {
-    background-image: url("/assets/images/windmill.jpg");
+    background: url("/assets/images/windmill.jpg") fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -63,14 +69,31 @@ nav ul li a {
     color: white;
 }
 
-.about p {
-    margin: 2em;
-}
-
 #shows,
 #about,
 #contact {
     padding: 30px;
+}
+
+#about {
+    width: 50%;
+    padding: 100px 0;
+}
+
+#contact {
+    padding: 100px 0;
+    color: white;
+    background-color: rgba(9, 65, 31, 0.8);
+}
+
+#contact p {
+    width: 50%;
+}
+
+.alt-title {
+    padding: 10px;
+    width: 100%;
+    font-size: 2.5em;
 }
 
 #shows {
@@ -78,15 +101,17 @@ nav ul li a {
 }
 
 .show {
-    margin: 10px;
     display: inline-block;
-    border-radius: 10px;
-    width: 450px;
-    height: 350px;
+    height: 356px;
+    width: 475px;
+    background-color: wheat;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
 }
 
-.show-1 {
-    background: #ffffff url("/assets/images/ec.jpg") no-repeat center; 
+.show:hover {
+    opacity: 1;
 }
 
 footer {
@@ -130,17 +155,15 @@ footer {
     }
 
     .intro {
-        margin: auto;
+        margin: 10px;
     }
 
     nav ul {
         display: none;
     }
-}
-
-@media (max-width: 500px) {
-    .show {
-        width: 95%;
-        height: 250px;
+    
+    #about,
+    #contact p {
+        width: 70%;
     }
 }
