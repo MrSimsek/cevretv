@@ -22,9 +22,8 @@ body,
 }
 
 .info {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
 }
 
 nav {
@@ -131,7 +130,7 @@ nav ul li a {
     padding-left: 5%;
 }
 
-.accounts a {
+.social-accounts a {
     display: inline-block;
     color: white;
     margin: 2%;
@@ -139,7 +138,7 @@ nav ul li a {
     transition: all 0.1s ease-in-out;
 }
 
-.accounts a:hover {
+.social-accounts a:hover {
     opacity: 1;
 }
 
