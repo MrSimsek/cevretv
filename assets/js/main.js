@@ -2,21 +2,18 @@ window.onload = function(){
 
     var modal = document.getElementById('show-modal');
     var modalVideo = document.getElementById("modal-video");
+    var shows = document.querySelectorAll('.sm-video');
 
     function openModal() {
+        for(var i=0, len = shows.length; i < len; i++){
+            shows[i].style.backgroundColor = "";
+        }
         modalVideo.src = this.getAttribute("data-video");
-        window.scrollTo(0, 0);
+        this.style.backgroundColor = "orange";
+        // window.scrollTo(0, 0);
     }
 
-    var shows = document.querySelectorAll('.show');
     for(var i=0, len = shows.length; i < len; i++){
         shows[i].addEventListener('click', openModal);
     }
-
-    /* var span = document.getElementsByClassName("close")[0];
-    
-    span.onclick = function() { 
-        modal.style.display = "none";
-        modalVideo.src = "";
-    }  */
 };

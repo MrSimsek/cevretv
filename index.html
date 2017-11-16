@@ -12,14 +12,66 @@
 <body>
     <div class="grid">
         <nav>
-            <a class="logo" href="#"><img style="height: 100%; width: 50px;" src="assets/images/logo.png" alt="LOGO"></a>
             <ul>
-                <li><a class="list-item" href="#">Blog</a></li>
                 <li><a class="list-item" href="#shows">Programlar</a></li>
+                <li><a class="list-item" href="#">Blog</a></li>
                 <li><a class="list-item" href="#about">Hakkımızda</a></li>
                 <li><a class="list-item" href="#contact">İletişim</a></li>
             </ul>
         </nav>
+        <header>
+            <div>
+                <a href="#"><img style="height: 100%; width: 150px;" src="assets/images/logo.png" alt="LOGO"></a>
+            </div>
+            <div class="intro">
+                <h1 class="title">Çevre TV</h1>
+                <br>
+                <p>Türkiye'nin sürdürülebilirlik ve yeşil enerji üzerine televizyon kanalı.</p>
+            </div>
+        </header>
+        <div class="tv">
+            <div class="big-video" style="width: 65%; height:90%;">
+                <iframe id="modal-video" class="modal-content" width="100%" height="100%" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/WCKz8ykyI2E?rel=0"></iframe>
+            </div>
+            <div class="sm-videos">
+                <div class="sm-video" data-video='https://www.youtube.com/embed/JyL58vlbvgw?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/1.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #1</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/xk0-yebNA_o?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/2.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #2</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/Gz_L6KuqvFI?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/3.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #3</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/WCKz8ykyI2E?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/4.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #4</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/7yXU1nEIFqM?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/5.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #5</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/8JeQuz2i2VY?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/6.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #6</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/zCfazf2gVuo?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/7.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #7</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/MgcUas9aywU?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/8.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #8</h4>
+                </div>
+                <div class="sm-video" data-video='https://www.youtube.com/embed/kCaLYKvqcss?rel=0'>
+                    <img class="sm-video-img" src="assets/thumbnails/9.jpeg" alt="">
+                    <h4 class="sm-video-title">SHOW #9</h4>
+                </div>
+            </div>
+        </div>
         <!-- <div class="landing-screen" style="background: url('assets/images/bg.jpg') fixed; background-size: cover;">
             <div class="intro">
                 <h1 class="title">Çevre TV'ye hoşgeldiniz.</h1>
@@ -27,7 +79,7 @@
                 <p>Türkiye'nin sürdürülebilirlik ve yeşil enerji üzerine televizyon kanalı.</p>
             </div>
         </div> -->
-        <iframe id="modal-video" class="modal-content" width="80%" height="80%" style="margin-top: 80px;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/xk0-yebNA_o?rel=0"></iframe>
+        <!-- <iframe id="modal-video" class="modal-content" width="100%" height="80%" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/xk0-yebNA_o?rel=0"></iframe> -->
         <div id="shows">
             <h1 class="alt-title">Programlar</h1>
             <br>
@@ -42,16 +94,9 @@
                 <div class="show show-7" style="background: url('assets/thumbnails/7.jpeg') no-repeat center; background-size: cover;" data-video='https://www.youtube.com/embed/zCfazf2gVuo?rel=0'></div>
                 <div class="show show-8" style="background: url('assets/thumbnails/8.jpeg') no-repeat center; background-size: cover;" data-video='https://www.youtube.com/embed/MgcUas9aywU?rel=0'></div>
                 <div class="show show-9" style="background: url('assets/thumbnails/9.jpeg') no-repeat center; background-size: cover;" data-video='https://www.youtube.com/embed/kCaLYKvqcss?rel=0'></div>
-                
-                <!-- <div id="show-modal" class="modal">
-                    
-                    <span class="close">X</span>
-                    
-                    <iframe id="modal-video" class="modal-content" width="80%" height="80%" frameborder="0" allowfullscreen></iframe>
-                </div> -->
             </div>
         </div>
-        <div id="about" style="margin:10px auto;background-color: rgba(20, 20, 20, 0.8);color: white;">
+        <div id="about" style="background-color: rgba(20, 20, 20, 0.8);color: white;">
             <h1 class="alt-title">Hakkımızda</h1>
             <br>
             <p class="info">
@@ -127,7 +172,7 @@
                 </div>
             </div> -->
         </div>
-        <div id="contact" style="background: url('assets/images/bg.jpg') center;">
+        <div id="contact">
             <h1 class="alt-title">İletişim</h1>
             <h3>Önerilerinizi ve düşüncelerinizi merak ediyoruz.</h3>
             <br>
