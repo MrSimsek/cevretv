@@ -9,7 +9,7 @@ window.onload = function(){
             shows[i].style.backgroundColor = "";
         }
         modalVideo.src = this.getAttribute("data-video");
-        this.style.backgroundColor = "orange";
+        this.style.backgroundColor = "rgba(13, 39, 26, 0.8)";
         // window.scrollTo(0, 0);
     }
 
