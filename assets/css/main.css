@@ -28,7 +28,7 @@ header {
 
 .logo {
     height: 100%; 
-    width: 200px;
+    width: 100px;
 }
 
 .alt-title {
@@ -42,7 +42,7 @@ header {
 }
 
 nav {
-    background-color: white;
+    background-color: rgb(169, 207, 185);
     top: 0;
     left: 0;
     width: 100%;
@@ -73,26 +73,24 @@ nav ul li:hover {
 
 .big-video {
     width: 65%; 
-    height:90%;
+    height: 90%;
 }
 
 .sm-videos {
     width: 25%; 
     height: 90%; 
-    overflow:  scroll;
+    overflow: scroll;
     overflow-x: hidden;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .sm-video {
-    height: 80px;
-    cursor: pointer;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 3px;
+    height: 20%;
+    max-height: 80px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .sm-video:hover {
@@ -103,7 +101,11 @@ nav ul li:hover {
 .sm-video-img {
     height: 90%;
     width: 40%;
-    margin-left: 2%;
+}
+
+.sm-video-title {
+    width: 50%;
+    text-align: left;
 }
 
 #shows {
@@ -216,28 +218,32 @@ footer {
 
     .big-video {
         width: 100%;
-        height: 75%;
+        height: 72%;
         margin: 0;
     }
 
     .sm-videos {
         display: flex;
         flex-direction: row;
-        width: 90%;
-        height: 20%;
-        margin: 0 auto;
-        overflow:  scroll;
+        height: 72%;
+        width: 100%;
+        overflow-x: scroll;
         overflow-y: hidden;
-        overflow-x: hidden;
+        -webkit-overflow-scrolling: auto;
     }
 
     .sm-video {
-        height: 50px;
-        width: 100px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        height: 100%;
+        padding: auto 0;
+    }
+
+    .sm-video-img {
+        width: 90%;
+        width: 150px;
+    }
+
+    .sm-video-title {
+        display: none;
     }
 
     .show {
