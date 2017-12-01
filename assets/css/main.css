@@ -213,19 +213,21 @@ footer {
     .tv {
         display: flex;
         flex-direction: column;
-        height: 50%;
+        height: 55%;
     }
 
     .big-video {
         width: 100%;
-        height: 72%;
+        height: 70%;
         margin: 0;
+        border: 1px solid black;
     }
 
     .sm-videos {
+        border: 1px solid black;
         display: flex;
         flex-direction: row;
-        height: 72%;
+        height: 30%;
         width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
